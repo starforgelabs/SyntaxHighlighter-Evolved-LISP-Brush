@@ -28,13 +28,13 @@
  * along with SyntaxHighlighter.  If not, see <http://www.gnu.org/licenses/>.
  * 
  * 
- * Very simple Latex brush
+ * Very simple latex brush
  * http://www.jorgemarsal.com/blog/
  */
 
 
 
-SyntaxHighlighter.brushes.Latex = function()
+SyntaxHighlighter.brushes.latex = function()
 {
 	var keywords =	'if fi then elif else for do done until while break continue case function return in eq ne gt lt ge le';
 	//var commands =  'include usepackage begin end ref label includegraphics';
@@ -47,6 +47,6 @@ SyntaxHighlighter.brushes.Latex = function()
 		];
 }
 
-SyntaxHighlighter.brushes.Latex.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Latex.aliases		= ['latex', 'tex'];
+SyntaxHighlighter.brushes.latex.prototype	= new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.latex.aliases		= ['latex'];
 

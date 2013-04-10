@@ -8,29 +8,19 @@ Author URI: http://michaelgod.idv.tw
 */
 
 // SyntaxHighlighter Evolved doesn't do anything until early in the "init" hook, so best to wait until after that
-add_action( 'init', 'syntaxhighlighter_LaTeXlang_regscript' );
+add_action( 'init', 'syntaxhighlighter_latexlang_regscript' );
  
 // Tell SyntaxHighlighter Evolved about this new language/brush
-add_filter( 'syntaxhighlighter_brushes', 'syntaxhighlighter_LaTeXlang_addlang' );
+add_filter( 'syntaxhighlighter_brushes', 'syntaxhighlighter_latexlang_addlang' );
  
 // Register the brush file with WordPress
-function syntaxhighlighter_LaTeXlang_regscript() {
-    wp_register_script(
-        'syntaxhighlighter-brush-LaTeX',
-        plugins_url(
-            'shBrushLaTeX.js',
-            __FILE__
-        ),
-        array('syntaxhighlighter-core'),
-        '1.0.0'
-    );
+function syntaxhighlighter_latexlang_regscript() {
+    wp_register_script('syntaxhighlighter-brush-latex', plugins_url('shBrushLatex.js',__FILE__),array('syntaxhighlighter-core'),'1.0.0');
 }
  
 // Filter SyntaxHighlighter Evolved's language array
-function syntaxhighlighter_vhdllang_addlang( $brushes ) {
+function syntaxhighlighter_latexlang_addlang( $brushes ) {
     $brushes['latex'] = 'latex';
-    $brushes['tex'] := 'latex';
     return $brushes;
 }
- 
 ?>
