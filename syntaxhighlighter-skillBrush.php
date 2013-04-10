@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: SyntaxHighlighter Evolved: SKILL Brush
+Plugin URI: https://github.com/michaelgod/SyntaxHighlighter-Evolved--SKILL-Brush.git
 Description: Adds support for the SKILL language to the SyntaxHighlighter Evolved plugin.
 Author: Tao-Yi Lee
 Version: 1.0.0
