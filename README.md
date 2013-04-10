@@ -1,21 +1,21 @@
-=== SyntaxHighlighter Evolved: SKILL Brush ===
+=== SyntaxHighlighter Evolved: LISP Brush ===
 Contributors: UnboundDarkness
 Donate link: http://www.programnation.com/
-Tags: skill, syntax highlighter, code, sourcecode
+Tags: lisp, syntax highlighter, code, sourcecode
 Requires at least: 2.8
 Tested up to: 3.4
 Stable tag: 1.0
 License: GPLv2 or later.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin enables colorization for the SKILL language using the Syntax Highlighter Evolved plugin.
+This plugin enables colorization for the LISP language using the Syntax Highlighter Evolved plugin.
 
 == Description ==
 
 
-This plugin enables the syntax colorization for the SKILL language by extending the [Syntax Highlighter Evolved](http://wordpress.org/extend/plugins/syntaxhighlighter/) functionality (and thus, you need to have it installed).
+This plugin enables the syntax colorization for the LISP language by extending the [Syntax Highlighter Evolved](http://wordpress.org/extend/plugins/syntaxhighlighter/) functionality (and thus, you need to have it installed).
 
-The shortcode [skill] ... all code ... [/skill] can be used to colorize the code.
+The shortcode [lisp] ... all code ... [/lisp] can be used to colorize the code.
 
 View example posts at [Programnation](http://www.programnation.com/category/sistemas-digitales/)
 
@@ -31,14 +31,14 @@ If you see there are keywords missing, you can edit the file shBrushVhdl.js, loc
 
 == Screenshots ==
 
-1. An example of the SKILL brush for SyntaxHighlighter Evolved.
+1. An example of the LISP brush for SyntaxHighlighter Evolved.
 
 == Changelog ==
 
 = 1.0 =
-* SKILL finally on WordPress!
+* LISP finally on WordPress!
 
 == Upgrade notice ==
 
 = 1.0 =
-* SKILL finally on WordPress!
+* LISP finally on WordPress!
