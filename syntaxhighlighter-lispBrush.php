@@ -2,7 +2,7 @@
 /*
 Plugin Name: SyntaxHighlighter Evolved: LISP Brush
 Plugin URI: https://github.com/michaelgod/SyntaxHighlighter-Evolved-LISP-Brush.git
-Description: Adds support for the SKILL language to the SyntaxHighlighter Evolved plugin.
+Description: Adds support for the LISP language to the SyntaxHighlighter Evolved plugin.
 Author: Tao-Yi Lee
 Version: 0.1
 Author URI: http://michaelgod.idv.tw

@@ -25,25 +25,30 @@
  * along with SyntaxHighlighter.  If not, see <http://www.gnu.org/licenses/>.
  * 
  * 
- * Very simple skill brush
- * http://michaelgod.idv.tw
+ * LISP Syntax Originally from Knut Haugen
+ * http://blog.knuthaugen.no/2009/10/a-syntaxhighlighter-brush-for-lisp/
  */
 
+SyntaxHighlighter.brushes.Lisp = function(){
 
+    var funcs     = 'lambda list progn mapcar car cdr reverse member append format';
+    var keywords  = 'let while unless cond if eq t nil defvar dotimes setf listp numberp not equal';
+    var macros    = 'loop when dolist dotimes defun';
+    var operators = '> < + - = * / %';
 
-SyntaxHighlighter.brushes.skill = function()
-{
-	var keywords =	'if fi then elif else for do done until while break continue case function return in eq ne gt lt ge le';
-	//var commands =  'include usepackage begin end ref label includegraphics';
+    this.regexList = [
+     { regex: SyntaxHighlighter.regexLib.doubleQuotedString, css: 'string' },
+     { regex: new RegExp('&\\w+;', 'g'), css: 'plain' },
+     { regex: new RegExp(';.*', 'g'), css: 'comments' },
+     { regex: new RegExp("'(\\w|-)+", 'g'), css: 'variable' },
+     { regex: new RegExp(this.getKeywords(keywords), 'gm'), css: 'keyword' },
+     { regex: new RegExp(this.getKeywords(macros), 'gm'), css: 'keyword' },
+     { regex: new RegExp(this.getKeywords(funcs), 'gm'), css: 'functions' },
+    ];
     
-	this.regexList = [
-		{ regex: new RegExp('%.*','gm'),		css: 'comments' },		// one line comments
-		{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,			css: 'string' },		// double quoted strings
-		{ regex: new RegExp('\\\\\\w*','gm'),			css: 'keyword' },		// commands
-		{ regex: new RegExp(this.getKeywords(keywords), 'gm'),			css: 'function' },		// keywords
-		];
 }
 
-SyntaxHighlighter.brushes.skill.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.skill.aliases		= ['skill'];
+SyntaxHighlighter.brushes.Lisp.prototype = new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.Lisp.aliases   = ['lisp'];
+
 
