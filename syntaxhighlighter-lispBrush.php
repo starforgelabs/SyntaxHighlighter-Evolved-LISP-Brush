@@ -16,12 +16,12 @@ add_filter( 'syntaxhighlighter_brushes', 'syntaxhighlighter_lisplang_addlang' );
  
 // Register the brush file with WordPress
 function syntaxhighlighter_lisplang_regscript() {
-    wp_register_script('syntaxhighlighter-brush-lisp', plugins_url('shBrushLatex.js',__FILE__),array('syntaxhighlighter-core'),'1.0.0');
+    wp_register_script('syntaxhighlighter-brush-lisp', plugins_url('shBrushLisp.js',__FILE__),array('syntaxhighlighter-core'),'1.0.0');
 }
  
 // Filter SyntaxHighlighter Evolved's language array
 function syntaxhighlighter_lisplang_addlang( $brushes ) {
-    $brushes['lisp'] = 'latex';
+    $brushes['lisp'] = 'lisp';
     return $brushes;
 }
 ?>
